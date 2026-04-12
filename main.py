@@ -38,6 +38,7 @@ import aiofiles
 import zipfile
 import shutil
 import ffmpeg
+import youtubeuploader as yt_up
 
 # Initialize the bot
 bot = Client(
@@ -1253,6 +1254,12 @@ async def txt_handler(bot: Client, m: Message):
                     prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
+		            try:
+                        yt_url = yt_up.upload_video(filename, name, f"Batch: {b_name}\nCredit: {CREDIT}")
+                        if yt_url:
+                            cc += f"\n\n📺 **YouTube Link:** {yt_url}" # Caption mein link joda gaya
+                    except Exception as e:
+                        print(f"YouTube Error: {e}")		    
                     await prog1.delete(True)
                     await prog.delete(True)
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog, channel_id)
