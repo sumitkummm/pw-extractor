@@ -1257,7 +1257,7 @@ async def txt_handler(bot: Client, m: Message):
                     try:
                         yt_url = yt_up.upload_video(filename, name, f"Batch: {b_name}\nCredit: {CREDIT}")
                         if yt_url:
-                            cc += f"\n\n📺 **YouTube Link:** {yt_url}" # Caption mein link joda gaya
+                            cc += f"\n\n📺 <a href='{yt_url}'>**YouTube Link**</a>" # Caption mein sirf naam dikhega # Caption mein link joda gaya
                     except Exception as e:
                         print(f"YouTube Error: {e}")		    
                     await prog1.delete(True)
