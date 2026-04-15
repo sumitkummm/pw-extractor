@@ -1,4 +1,4 @@
-# ⚡ KUMAWAT DRM Bot - MAX SPEED VERSION
+# ⚡ SAINI DRM Bot - MAX SPEED VERSION
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
@@ -164,7 +164,6 @@ docker run -d \
 2. **Region Selection**: Deploy in region closest to your users (India: `eu` or `us`)
 3. **Concurrent Downloads**: Bot already optimized for 16 concurrent fragments
 4. **Large Files**: For files >500MB, bot automatically uses chunked downloading
-5. **YOUTUBE UPLOAD**:when file lecture will be dowload first upload on youtube after telegram.
 
 ## 🐛 Troubleshooting
 
@@ -187,10 +186,10 @@ heroku ps:restart worker
 ```
 
 ## 📞 Support
- -NAME - SUMIT KUMAWAT
 
+- **Telegram**: [@Divyanshshukla7](https://t.me/Divyanshshukla7)
 - **Channel**: Updates and announcements
 
 ---
 
-**⚡ Powered by KUMAWAT | v2.0.0 MAX SPEED**
+**⚡ Powered by SAINI | v2.0.0 MAX SPEED**

@@ -38,7 +38,6 @@ import aiofiles
 import zipfile
 import shutil
 import ffmpeg
-import youtubeuploader as yt_up
 
 # Initialize the bot
 bot = Client(
@@ -478,7 +477,7 @@ async def start(bot, m: Message):
     caption = f"🌟 Welcome {m.from_user.mention} ! 🌟"
     start_message = await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+        photo="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
         caption=caption
     )
 
@@ -516,7 +515,7 @@ async def start(bot, m: Message):
             [InlineKeyboardButton("💎 Features", callback_data="feat_command")],
             [InlineKeyboardButton("USER CMD", callback_data="user_command"), InlineKeyboardButton("OWNER CMD", callback_data="owner_command")],
             [InlineKeyboardButton("🎫 plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/leavingproperty")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/Divyanshshukla7")],
         ])
 
         await start_message.edit_text(
@@ -531,7 +530,7 @@ async def start(bot, m: Message):
             [InlineKeyboardButton("💎 Features", callback_data="feat_command")],
             [InlineKeyboardButton("USER CMD", callback_data="user_command"), InlineKeyboardButton("OWNER CMD", callback_data="owner_command")],
             [InlineKeyboardButton("🎫 plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/leavingproperty")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/Divyanshshukla7")],
         ])
         await start_message.edit_text(
            f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
@@ -547,12 +546,12 @@ async def back_to_main_menu(client, callback_query):
             [InlineKeyboardButton("💎 Features", callback_data="feat_command")],
             [InlineKeyboardButton("USER CMD", callback_data="user_command"), InlineKeyboardButton("OWNER CMD", callback_data="owner_command")],
         [InlineKeyboardButton("🎫 plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/leavingproperty")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="🛠️ OWNER", url="https://t.me/Divyanshshukla7")],
         ])
 
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+        media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
         caption=caption
       ),
       reply_markup=keyboard
@@ -592,7 +591,7 @@ async def help_button(client, callback_query):
 
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -619,7 +618,7 @@ async def owner_button(client, callback_query):
 
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -653,7 +652,7 @@ async def upgrade_button(client, callback_query):
 
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -673,7 +672,7 @@ async def feature_button(client, callback_query):
   ])
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -686,7 +685,7 @@ async def pin_button(client, callback_query):
   caption = f"**Auto Pin 📌 Batch Name :**\n\nAutomatically Pins the Batch Name in Channel or Group, If Starting from the First Link."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -698,7 +697,7 @@ async def watermark_button(client, callback_query):
   caption = f"**Custom Watermark :**\n\nSet Your Own Custom Watermark on Videos for Added Personalization."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -710,7 +709,7 @@ async def restart_button(client, callback_query):
   caption = f"**🔄 Resat Command:**\n\nIf You Want to Resat Your Bot, Simply Use Command /resat."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -722,7 +721,7 @@ async def logs_button(client, callback_query):
   caption = f"**🖨️ Bot Working Logs:**\n\n◆/logs - Bot Send Working Logs in .txt File."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -734,7 +733,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -746,7 +745,7 @@ async def titlle_button(client, callback_query):
   caption = f"**Custom Title Feature :**\nAdd and customize titles at the starting\n**NOTE 📍 :** The Titile must enclosed within (Title), Best For appx's .txt file."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -758,7 +757,7 @@ async def broadcast_button(client, callback_query):
   caption = f"**📢 Broadcasting Support:**\n\n◆/broadcast - 📢 Broadcast to All Users.\n◆/broadusers - 👁️ To See All Broadcasting User"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -770,7 +769,7 @@ async def editor_button(client, callback_query):
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -782,7 +781,7 @@ async def y2t_button(client, callback_query):
   caption = f"**YouTube Commands:**\n\n◆/ytm - 🎶 YT .txt → .mp3 downloader\n◆/yt2m - 🎵 YT link → .mp3 downloader\n◆/y2t - 🔪 YouTube Playlist or Web Search → .txt Converter"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://repgyetdcodkynrbxocg.supabase.co/storage/v1/object/public/images/telegram-1775903289685-06cfd9d0.jpg",
+      media="https://i.ibb.co/hFBKqXhS/file-29385.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1119,12 +1118,12 @@ async def txt_handler(bot: Client, m: Message):
 
 
             try:
-                cc = f'╔══════[ ༺⚡༻🤍🌸श्रीकृष्ण🌸🤍 ༺⚡༻]══════╗\n╭┈✰┈┈┈╮\n{str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📹 𝗩𝗜𝗗𝗘𝗢 𝗧𝗜𝗧𝗟𝗘 ➬ ** `{name1}\n├── Extention ➫ @leavingproperty 💝\n├── Resolution [{res}p] @leavingpropertymkv`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>\n\n╔════════════════════╗            [༺⚡༻ 🤍🌸श्रीकृष्ण🌸🤍༺⚡༻ 🤭🤫](https://t.me/leavingproperty)╚════════════════════╝'
-                cc1 = f'╔══════[ 🤍🌸श्रीकृष्ण🌸🤍]══════╗\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📁 𝗙𝗜𝗟𝗘 𝗧𝗜𝗧𝗟𝗘  ➬** `{name1}\n├── Extention ➫ @leavingproperty 💝\n├── Resolution -@leavingproperty.pdf`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>\n\n╔════════════════════╗            [༺⚡༻ 🤍🌸श्रीकृष्ण🌸🤍༺⚡༻ 🤭🤫](https://t.me/leavingproperty)╚════════════════════╝'
-                cczip = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Zip Title :** `{name1}\n├── Extention ➫ @leavingproperty 💝\n├── Resolution.zip`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>' 
-                ccimg = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Img Title :** `{name1}\n├── Extention ➫ @leavingproperty 💝\n├── Resolution.jpg`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                ccm = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Audio Title :** `{name1}\n├── Extention ➫ @leavingproperty💝\n├── Resolution.mp3`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                cchtml = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Html Title :** `{name1}\n├── Extention ➫ @leavingproperty 💝\n├── Resolution.html`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cc = f'╔══════[ ༺⚡༻ 𝑫𝒊𝒗𝒚𝒂𝒏𝒔𝒉 𝒔𝒉𝒖𝒌𝒍𝒂 ༺⚡༻]══════╗\n╭┈✰┈┈┈╮\n{str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📹 𝗩𝗜𝗗𝗘𝗢 𝗧𝗜𝗧𝗟𝗘 ➬ ** `{name1}\n├── Extention ➫ @Divyanshshukla7 💝\n├── Resolution [{res}p] @Divyanshshukla7mkv`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>\n\n╔════════════════════╗            [༺⚡༻ 𝑫𝒊𝒗𝒚𝒂𝒏𝒔𝒉 𝒔𝒉𝒖𝓴𝓵𝓪 ༺⚡༻ 🤭🤫](https://t.me/Divyanshshukla)╚════════════════════╝'
+                cc1 = f'╔══════[ Divyanshshukla]══════╗\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📁 𝗙𝗜𝗟𝗘 𝗧𝗜𝗧𝗟𝗘  ➬** `{name1}\n├── Extention ➫ @Divyanshshukla7 💝\n├── Resolution -@Divyanshshukla7.pdf`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>\n\n╔════════════════════╗            [༺⚡༻ 𝑫𝒊𝒗𝒚𝒂𝒏𝒔𝒉 𝒔𝒉𝒖𝓴𝓵𝓪 ༺⚡༻ 🤭🤫](https://t.me/Divyanshshukla7)╚════════════════════╝'
+                cczip = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Zip Title :** `{name1}\n├── Extention ➫ Divyanshshukla 💝\n├── Resolution.zip`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>' 
+                ccimg = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Img Title :** `{name1}\n├── Extention ➫ @Divyanshshukla7 💝\n├── Resolution.jpg`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                ccm = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Audio Title :** `{name1}\n├── Extention ➫ @Divyanshshukla7💝\n├── Resolution.mp3`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cchtml = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Html Title :** `{name1}\n├── Extention ➫ @Divyanshshukla7 💝\n├── Resolution.html`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
 
                 if "drive" in url:
                     try:
@@ -1254,12 +1253,6 @@ async def txt_handler(bot: Client, m: Message):
                     prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
-                    try:
-                        yt_url = yt_up.upload_video(filename, name, f"Batch: {b_name}\nCredit: {CREDIT}")
-                        if yt_url:
-                            cc += f"\n\n📺 <a href='{yt_url}'>**YouTube Link**</a>" # Caption mein sirf naam dikhega # Caption mein link joda gaya
-                    except Exception as e:
-                        print(f"YouTube Error: {e}")		    
                     await prog1.delete(True)
                     await prog.delete(True)
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog, channel_id)
